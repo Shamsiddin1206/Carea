@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp">
+    <ImageView
+        android:id="@+id/inboxelements_rasm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mercedes"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:id="@+id/inboxelements_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/inboxelements_rasm"
+        app:layout_constraintStart_toEndOf="@id/inboxelements_rasm"
+        android:layout_marginStart="15dp"
+        android:text="Mercedes_Benz"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inboxelements_phonenumber"
+        app:layout_constraintTop_toBottomOf="@id/inboxelements_title"
+        app:layout_constraintStart_toStartOf="@id/inboxelements_title"
+        android:text="+998 99 008 65 08"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:id="@+id/inboxelements_staffrasmi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintTop_toTopOf="@id/inboxelements_rasm"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/inboxelements_rasm"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
